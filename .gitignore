@@ -1,0 +1,17 @@
+# Development
+node_modules/
+.DS_Store
+*.log
+
+# Testing
+/tmp/
+
+# Build artifacts
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
