@@ -24,7 +24,7 @@ const gameState = {
     brightness: 1.0, // Full brightness
     rainDrops: [],
     keys: {},
-    soundVolume: 1.0
+    soundVolume: 1.0 // Ready for audio implementation (e.g., rain sound effects)
 };
 
 // Input handling
@@ -40,7 +40,7 @@ document.addEventListener('keyup', (e) => {
 class RainDrop {
     constructor() {
         this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height - canvas.height; // Start above screen
+        this.y = -Math.random() * canvas.height; // Start above screen (negative y)
         this.length = Math.random() * 15 + 10;
         this.speed = Math.random() * 3 + 5; // Vertical speed
         this.opacity = Math.random() * 0.3 + 0.5;
